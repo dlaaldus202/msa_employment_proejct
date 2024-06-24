@@ -9,6 +9,7 @@ import React, { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { SwiperSlide } from 'swiper/react'
 import { bannerTypeCodes, MainProps } from '.'
+import { log } from 'console'
 
 const MainSM = ({ banners, boards }: MainProps) => {
   const { t } = useTranslation()
@@ -18,6 +19,8 @@ const MainSM = ({ banners, boards }: MainProps) => {
   const [mainBanners, setMainBanners] = useState(undefined)
   const [board, setBoard] = useState(undefined)
 
+  console.log('MainSM component is rendering')
+    
   // 메인 배너
   useEffect(() => {
     if (banners) {

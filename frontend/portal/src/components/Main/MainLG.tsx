@@ -38,6 +38,8 @@ const MainLG = (props: MainLGProps) => {
     Object.keys(reserveItems)[0],
   )
 
+  console.log('MainLM component is rendering')
+
   //예약 물품
   useEffect(() => {
     if (reserveItems) {
